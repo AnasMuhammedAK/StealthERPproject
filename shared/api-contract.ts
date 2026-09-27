@@ -1,1 +1,1 @@
-// Shared API Contract blueprint goes here
+// Shared API Contract goes here
