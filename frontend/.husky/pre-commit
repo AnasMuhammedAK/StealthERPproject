@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🏁 Running StealthERP Architecture & Secret Guardrails..."
+
+if [ -f "package.json" ] || [ -f "package-lock.json" ]; then
+    echo "❌ CRITICAL FAILURE: package files detected at the absolute repository root."
+    exit 1
+fi
+
+if [ -d "shared/api-contract" ]; then
+    echo "❌ CRITICAL FAILURE: Multi-file contract directory 'shared/api-contract/' found."
+    exit 1
+fi
+
+cd frontend && npx lint-staged
