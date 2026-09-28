@@ -50,7 +50,7 @@ table is what actually enforces access, not secrecy of these two variables.
 The Supabase **service-role / secret key must never** be placed in
 `.env.local`, in Vercel, in CI, or in git — it is used only from the
 Supabase dashboard and one-off local CLI commands, never referenced by any
-file under `src/`. See `.env.local.example` for the exact two-line template
+file under `src/`. See `.env.example` for the exact two-line template
 (`npm run env:local` generates the real, git-ignored `.env.local`).
 
 ## Environments
