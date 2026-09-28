@@ -3,9 +3,9 @@ name: Frontend CI
 on:
   pull_request:
     paths:
-      - 'frontend/**'
-      - 'shared/**'
-      - '.github/workflows/frontend-ci.yml'
+      - "frontend/**"
+      - "shared/**"
+      - ".github/workflows/frontend-ci.yml"
 
 jobs:
   test-frontend:
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install Dependencies
         run: |
