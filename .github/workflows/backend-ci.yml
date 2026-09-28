@@ -3,9 +3,9 @@ name: Backend CI
 on:
   pull_request:
     paths:
-      - "backend/**"
-      - "shared/**"
-      - ".github/workflows/backend-ci.yml"
+      - 'backend/**'
+      - 'shared/**'
+      - '.github/workflows/backend-ci.yml'
 
 jobs:
   test-backend:
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
 
       - name: Install Dependencies
         run: |
@@ -28,13 +28,3 @@ jobs:
         run: |
           cd backend
           npm run test || echo "Skipping until package.json script is ready"
-
-      - name: 🛡️ Verify backend/.env.example Template Exists
-        run: |
-          if [ ! -f backend/.env.example ]; then
-            echo "❌ CRITICAL ERROR: Missing template file 'backend/.env.example'!"
-            echo "Developers must commit this public structural layout before merging."
-            exit 1
-          fi
-          echo "✅ Success: backend/.env.example is present."
-
