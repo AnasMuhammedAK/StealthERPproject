@@ -29,6 +29,11 @@
       "node -e \"const fs = require('fs'); if(fs.existsSync('../shared') && fs.lstatSync('../shared').isDirectory() && fs.readdirSync('../shared').filter(f => f !== 'api-contract.ts').length > 0) { console.error('❌ LAW VIOLATION: The shared/ directory must contain ONLY the single file api-contract.ts.'); process.exit(1); }\""
     ]
   },
+  "**/*.{js,jsx,ts,tsx}": [
+  "eslint --fix",
+  "prettier --write"
+],
+
     "engines": {
     "node": "20.x"
   }

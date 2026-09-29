@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": "eslint . --fix"
   },
   "engines": {
     "node": "20.x"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
   }
 }
