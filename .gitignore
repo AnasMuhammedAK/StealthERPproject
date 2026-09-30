@@ -23,3 +23,7 @@ out/
 # Operating System System Files
 .DS_Store
 Thumbs.db
+.planning/
+.husky/
+.gsd/
+.claude/
