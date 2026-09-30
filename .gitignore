@@ -29,3 +29,4 @@ Thumbs.db
 .claude/
 next-env.d.ts
 *.tsbuildinfo
+ui-reference/
