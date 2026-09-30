@@ -53,7 +53,7 @@ import type { Database } from "@/lib/supabase/database.types";
 import {
   CreateProductInputSchema,
   UpdateProductInputSchema,
-} from "@stealth/shared/api-contract";
+} from "@shared/api-contract";
 
 type ProductUpdate = Database["public"]["Tables"]["products"]["Update"];
 

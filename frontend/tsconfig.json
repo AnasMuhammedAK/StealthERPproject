@@ -20,7 +20,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@shared/api-contract": ["../shared/api-contract.ts"],
+      "zod": ["./node_modules/zod"]
     }
   },
   "include": [

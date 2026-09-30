@@ -43,7 +43,7 @@ import { logEvent } from "@/lib/analytics/log-event";
 import { istDateString } from "@/lib/date/ist";
 import { formatPriceDisplay } from "@/features/products/lib/format-price";
 import { offersQueryKey } from "@/features/offers/hooks/use-offers";
-import { CreateOfferInputSchema } from "@stealth/shared/api-contract";
+import { CreateOfferInputSchema } from "@shared/api-contract";
 
 export const SAVE_OFFER_ERROR_CODES = ["save_failed"] as const;
 export type SaveOfferErrorCode = (typeof SAVE_OFFER_ERROR_CODES)[number];

@@ -5,7 +5,7 @@ import { useAuth } from "@/features/auth/auth-provider";
 import { AuthError } from "@/features/auth/lib/auth-error";
 import { slugify, insertStoreWithUniqueSlug } from "@/features/auth/lib/slug";
 import { logEvent } from "@/lib/analytics/log-event";
-import { FinishShopInputSchema } from "@stealth/shared/api-contract";
+import { FinishShopInputSchema } from "@shared/api-contract";
 
 type StoreRow = Database["public"]["Tables"]["stores"]["Row"];
 

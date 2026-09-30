@@ -24,7 +24,7 @@
 import { useMutation } from "@tanstack/react-query";
 import { supabase } from "@/lib/supabase/client";
 import { useAuth } from "@/features/auth/auth-provider";
-import { UpdateStoreInputSchema } from "@stealth/shared/api-contract";
+import { UpdateStoreInputSchema } from "@shared/api-contract";
 
 export interface ToggleOpenInput {
   storeId: string;

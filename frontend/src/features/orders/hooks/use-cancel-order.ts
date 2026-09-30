@@ -21,7 +21,7 @@ import { useMutation } from "@tanstack/react-query";
 import { supabase } from "@/lib/supabase/client";
 import { logEvent } from "@/lib/analytics/log-event";
 import { ordersQueryKey, type Order } from "@/features/orders/hooks/use-orders";
-import { UpdateOrderStatusInputSchema } from "@stealth/shared/api-contract";
+import { UpdateOrderStatusInputSchema } from "@shared/api-contract";
 
 export interface CancelOrderInput {
   orderId: string;

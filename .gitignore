@@ -24,6 +24,8 @@ out/
 .DS_Store
 Thumbs.db
 .planning/
-.husky/
+.husky/_
 .gsd/
 .claude/
+next-env.d.ts
+*.tsbuildinfo

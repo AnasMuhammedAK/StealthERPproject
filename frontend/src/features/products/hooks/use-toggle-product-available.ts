@@ -23,7 +23,7 @@ import { useMutation } from "@tanstack/react-query";
 import { supabase } from "@/lib/supabase/client";
 import { logEvent } from "@/lib/analytics/log-event";
 import type { Product } from "@/features/products/hooks/use-products";
-import { UpdateProductInputSchema } from "@stealth/shared/api-contract";
+import { UpdateProductInputSchema } from "@shared/api-contract";
 
 export interface ToggleProductAvailableInput {
   productId: string;

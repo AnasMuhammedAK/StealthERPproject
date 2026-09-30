@@ -6,7 +6,7 @@ import { AuthError } from "@/features/auth/lib/auth-error";
 import { toCanonicalPhone, toSyntheticEmail } from "@/features/auth/lib/phone";
 import { slugify, insertStoreWithUniqueSlug } from "@/features/auth/lib/slug";
 import { logEvent } from "@/lib/analytics/log-event";
-import { SignUpInputSchema } from "@stealth/shared/api-contract";
+import { SignUpInputSchema } from "@shared/api-contract";
 
 type StoreRow = Database["public"]["Tables"]["stores"]["Row"];
 

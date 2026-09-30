@@ -1,7 +1,7 @@
 // Unit test (no database, no browser): guards api-contract's own stated risk
 // — "kept in sync BY HAND... nothing enforces this file tree from the
 // database automatically" — by asserting every closed vocabulary in
-// shared/api-contract/enums.ts matches the one frontend constants file that
+// shared/api-contract.ts matches the one frontend constants file that
 // is its actual source of truth today. A future edit to either side without
 // the other breaks this test instead of silently drifting.
 
@@ -13,7 +13,7 @@ import {
   SHARE_DESTINATION_VALUES,
   ORDER_REJECTION_REASON_VALUES,
   EVENT_NAME_VALUES,
-} from "../../../shared/api-contract/enums.ts";
+} from "../../../shared/api-contract.ts";
 import { BUSINESS_TYPE_OPTIONS } from "../../src/features/auth/constants.ts";
 import { UNIT_OPTIONS } from "../../src/features/products/constants.ts";
 import {

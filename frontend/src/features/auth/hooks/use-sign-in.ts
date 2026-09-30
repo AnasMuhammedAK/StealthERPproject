@@ -3,7 +3,7 @@ import { supabase } from "@/lib/supabase/client";
 import { toCanonicalPhone, toSyntheticEmail } from "@/features/auth/lib/phone";
 import { AuthError, authErrorMessage } from "@/features/auth/lib/auth-error";
 import { setRememberedPhone } from "@/features/auth/lib/remembered-phone";
-import { SignInInputSchema } from "@stealth/shared/api-contract";
+import { SignInInputSchema } from "@shared/api-contract";
 
 // The AUTH-06 lockout orchestration (RESEARCH "Client orchestration (Login
 // screen submit handler)"): check the lock BEFORE signing in — skipping this

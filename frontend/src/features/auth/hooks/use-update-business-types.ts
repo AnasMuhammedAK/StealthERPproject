@@ -3,7 +3,7 @@ import { supabase } from "@/lib/supabase/client";
 import { useAuth } from "@/features/auth/auth-provider";
 import { AuthError } from "@/features/auth/lib/auth-error";
 import { logEvent } from "@/lib/analytics/log-event";
-import { UpdateStoreInputSchema } from "@stealth/shared/api-contract";
+import { UpdateStoreInputSchema } from "@shared/api-contract";
 
 export interface UpdateBusinessTypesInput {
   businessTypes: string[];

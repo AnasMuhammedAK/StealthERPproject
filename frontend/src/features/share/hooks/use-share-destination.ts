@@ -40,7 +40,7 @@ import {
   buildSharePayload,
   buildWhatsAppUrl,
 } from "@/features/share/lib/share-payload";
-import { CreateCatalogueShareInputSchema } from "@stealth/shared/api-contract";
+import { CreateCatalogueShareInputSchema } from "@shared/api-contract";
 
 interface ShareTarget {
   storeId: string;

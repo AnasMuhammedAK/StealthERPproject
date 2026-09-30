@@ -7,7 +7,7 @@ import {
   type PlaceOrderErrorCode,
 } from "@/features/storefront/constants";
 import { logEvent } from "@/lib/analytics/log-event";
-import { PlaceOrderInputSchema } from "@stealth/shared/api-contract";
+import { PlaceOrderInputSchema } from "@shared/api-contract";
 
 export interface PlaceOrderItem {
   productId: string;

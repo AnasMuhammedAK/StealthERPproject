@@ -10,7 +10,7 @@
 
 import { useMutation } from "@tanstack/react-query";
 import { supabase } from "@/lib/supabase/client";
-import { CreateCategoryInputSchema } from "@stealth/shared/api-contract";
+import { CreateCategoryInputSchema } from "@shared/api-contract";
 
 export interface UpsertCategoryInput {
   storeId: string;
